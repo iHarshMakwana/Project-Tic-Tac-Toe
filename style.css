@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@17&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: repeating-conic-gradient(
+      from 0deg,
+      orangered,
+      transparent 10deg,
+      orange 10deg,
+      orangered 20deg
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: orange;
+    height: 100vh;
+    width:100vw;
+}
+
+
+#head{
+    font-size: 70px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 17,
+    "SHLN" 50;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inout Start */
+.input{
+    height: 36px;
+    border-radius: 4px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 1px solid rgb(137, 151, 155);
+    transition: border-color 150ms ease-in-out 0s;
+    outline: none;
+    color: rgb(33, 49, 60);
+    background-color: rgb(255, 255, 255);
+    padding-right: 12px;
+    margin-left: 10px;
+
+}
+.input:hover{
+    box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+}
+/* Input End */
+
+/* Start $$ reset Button */
+#btn-start{
+    display: inline-block;
+    outline: 0;
+    appearance: none;
+    padding: 0px 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(9, 128, 76);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    transition: all 150ms ease-in-out 0s;
+    margin-left: 10px;
+
+}
+#btn-start:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 97, 73);
+    box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+}
+.container{
+    margin-top: 30px;
+}
+
+#btn-reset{
+    display: inline-block;
+    outline: 0;
+    appearance: none;
+    padding: 0px 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(167, 11, 11);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    transition: all 150ms ease-in-out 0s;
+    margin-left: 10px;
+}
+#btn-reset:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 2, 2);
+    box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 3px, rgb(117, 16, 16) 0px 0px 0px 3px;
+}
+
+/* Start Button ENd */
+
+
+.name{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* Grid Start*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap:5px;
+    margin: 20px auto;
+    max-width: 320px;
+}
+.cell{
+    display: flex;
+    border: 2px dotted black;
+    cursor: pointer;
+    background-color: rgba(241, 129, 0, 0.767);
+}
+.cell:hover {
+    background-color: rgba(77, 50, 1, 0.171);
+}
+/* Grid End */
