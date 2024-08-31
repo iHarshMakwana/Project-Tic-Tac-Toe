@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk:MORF@17&display=swap');
 
-
 *{
     padding: 0;
     margin: 0;
@@ -21,16 +20,13 @@ body{
     width:100vw;
 }
 
-
 #head{
     font-size: 70px;
-  font-family: "Honk", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "MORF" 17,
-    "SHLN" 50;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 17, "SHLN" 50;
     text-align: center;
 }
 
@@ -41,7 +37,7 @@ body{
     align-items: center;
 }
 
-/* Inout Start */
+/* Input Start */
 .input{
     height: 36px;
     border-radius: 4px;
@@ -55,15 +51,14 @@ body{
     background-color: rgb(255, 255, 255);
     padding-right: 12px;
     margin-left: 10px;
-
 }
 .input:hover{
     box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
 }
 /* Input End */
 
-/* Start $$ reset Button */
-#btn-start{
+/* Start & Reset Button */
+#btn-start, #btn-reset{
     display: inline-block;
     outline: 0;
     appearance: none;
@@ -72,74 +67,59 @@ body{
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
-    background-color: rgb(9, 128, 76);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 400;
     height: 36px;
     transition: all 150ms ease-in-out 0s;
     margin-left: 10px;
-
+}
+#btn-start {
+    background-color: rgb(9, 128, 76);
 }
 #btn-start:hover {
-    color: rgb(255, 255, 255);
     background-color: rgb(17, 97, 73);
     box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
 }
-.container{
-    margin-top: 30px;
-}
-
-#btn-reset{
-    display: inline-block;
-    outline: 0;
-    appearance: none;
-    padding: 0px 12px;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
+#btn-reset {
     background-color: rgb(167, 11, 11);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: 400;
-    height: 36px;
-    transition: all 150ms ease-in-out 0s;
-    margin-left: 10px;
 }
 #btn-reset:hover {
-    color: rgb(255, 255, 255);
     background-color: rgb(224, 2, 2);
     box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 3px, rgb(117, 16, 16) 0px 0px 0px 3px;
 }
-
-/* Start Button ENd */
-
+/* Button End */
 
 .name{
     font-weight: bolder;
     font-size: larger;
+    margin-left: 10px;
 }
 
-/* Grid Start*/
-
+/* Grid Start */
 .grid{
     display: grid;
-    grid-template-columns: repeat(3,100px);
-    grid-template-rows: repeat(3,100px);
-    gap:5px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
     margin: 20px auto;
     max-width: 320px;
 }
 .cell{
     display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px dotted black;
     cursor: pointer;
     background-color: rgba(241, 129, 0, 0.767);
+    font-size: 2rem;
 }
 .cell:hover {
     background-color: rgba(77, 50, 1, 0.171);
 }
 /* Grid End */
+
+
+#player2-input{
+    width: 450px;
+}
